@@ -1,1 +1,1 @@
-Bagi yang tidak berkontribusi atau masuk cuma lihat doang namanya tidak akan saya cantumkan di minggu depan.
+Bagi yang tidak berkontribusi atau masuk github cuma nonton doang, namanya tidak akan saya cantumkan minggu depan.
