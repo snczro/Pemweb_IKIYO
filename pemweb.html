@@ -123,6 +123,33 @@
             </div>
             <!--------------text-->
             <strong>Kabinet</strong>
+    
+<!-------------------------------search---------------------->
+<div class="search-bar">
+    <input type="text" placeholder="Search For Product" name="search"/>
+    <!----cancel-button-->
+    <a href="#" class="search-cancel">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+</svg>
+    </a>
+</div>
+
+<script>
+
+    document.addEventListener('DomContentLoaded', function(){
+        //==for==search==========//
+        document.addEventListener('click', function(event){
+            if(event.target.closest('.nav-search')){
+                document.querySelector('.search-bar').classList.add('search-bar-active');
+            }
+            else if(event.target.closest('.search-cancel')){
+                document.querySelector('.search-bar').classList.remove('search-bar-active');
+            }
+        });
+    });
+</script>
+
     <!-----LOGIN AND SIGNUP----------->
     <div class="form">
         <!---LOGIN---------->
@@ -169,7 +196,64 @@
             </div>
         </div>
     </div>
+            
+<!-------------category-------------->
+<section id="category">
+    <a href="#" class="category-box">
+        <!---image--->
+        <div class="category-img">
+            <img src="images/c1.png" alt="Chair"/>
+        </div>
 
+        <!---text--->
+        <strong>Chair</strong>
+    </a>
+
+    <a href="#" class="category-box">
+        <!---image--->
+        <div class="category-img">
+            <img src="images/c2.png" alt="Sofa"/>
+        </div>
+        <!---text--->
+        <strong>Sofa</strong>
+    </a>
+
+    <a href="#" class="category-box">
+        <!---image--->
+        <div class="category-img">
+            <img src="images/c3.png" alt="Cabinet"/>
+        </div>
+        <!---text--->
+        <strong>Cabinet</strong>
+    </a>
+
+    <a href="#" class="category-box">
+        <!---image--->
+        <div class="category-img">
+            <img src="images/c4.png" alt="Bed"/>
+        </div>
+        <!---text--->
+        <strong>Bed</strong>
+    </a>
+
+    <a href="#" class="category-box">
+        <!---image--->
+        <div class="category-img">
+            <img src="images/c5.png" alt="Desk"/>
+        </div>
+        <!---text--->
+        <strong>Desk</strong>
+    </a>
+
+    <a href="#" class="category-box">
+        <!---image--->
+        <div class="category-img">
+            <img src="images/c6.png" alt="Lamp"/>
+        </div>
+        <!---text--->
+        <strong>Lamp</strong>
+    </a>
+</section>
             <!--==================Popular Section=================-->
         <section id="popular">
             <h2>Popular Furniture</h2>
@@ -414,6 +498,7 @@
             </div>
         </footer>
 </html>
+
 
 
 
