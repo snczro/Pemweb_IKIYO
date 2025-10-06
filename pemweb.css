@@ -422,6 +422,36 @@ ul {
     font-weight: 500;
     margin-top: 10px;
 }
+/* recent */
+.recent-product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 20px
+}
+/* partner */
+#partner{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    grid-gap: 15px;
+}
+#partner img{
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(1);
+    opacity: 0.3;
+}
+#partner img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+}
 /* Services */
 .services {
     display: flex;
@@ -458,4 +488,5 @@ ul {
     margin: 0px;
     font-size: 1rem;
 }
+
 
