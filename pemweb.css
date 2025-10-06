@@ -283,23 +283,25 @@ ul {
     letter-spacing: 1px;
 }
 /* Popular Section */
-#popular{
+#popular,
+#recent-product,
+#sofa-products{
     max-width: 1200px;
     width: 90%;
     margin: 50px auto;
 }
-#popular h2{
+#popular h2,
+#recent-products h2,
+#sofa-products h3{
     color: #1d1d1d;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 .popular-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-template-columns: 1fr 300px;
+    grid-gap: 50px;
+    margin-top: 20px;
 }
 .popular-product-container{
     display: flex;
@@ -456,3 +458,4 @@ ul {
     margin: 0px;
     font-size: 1rem;
 }
+
