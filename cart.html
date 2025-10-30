@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------------------- Bagian Judul--------------------->
+    <title>IKIYO Furniture</title>
+    <!----------------------CSS eksternal-------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- MDBootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <!--------------------Input Ikon------------------------->
+    <link rel="shortcut icon" href="images/IKIYO LOGO.png" />
+    <!--------------------Import font------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!------------------Header--------------------->
+    <header>
+      <nav class="navigation">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <img
+            src="images/IKIYO LOGO.png"
+            width="200"
+            height="200"
+            alt="Logo"
+          />
+        </a>
+
+        <!-- Menu -->
+        <ul class="menu">
+          <li><a href="pemweb.html">Beranda</a></li>
+          <li><a href="pemweb.catalogue.html">Katalog</a></li>
+          <li><a href="#" id="header-wishlist">Wishlist</a></li>
+          <li><a href="Kotak-saran.html">Kotak Saran</a></li>
+        </ul>
+        <!-- Right Side -->
+        <div class="nav-right">
+          <div class="nav-icons">
+            <!----buttons------->
+            <div class="nav-search-butttons">
+              <a href="#" class="nav-search">
+                <div class="search-icon">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.5 23.5L18.2663 18.257M21.1666 11.25C21.1666 13.88 20.1219 16.4024 18.2621 18.2621C16.4024 20.1219 13.88 21.1666 11.25 21.1666C8.61992 21.1666 6.09757 20.1219 4.23784 18.2621C2.3781 16.4024 1.33331 13.88 1.33331 11.25C1.33331 8.61992 2.3781 6.09757 4.23784 4.23784C6.09757 2.3781 8.61992 1.33331 11.25 1.33331C13.88 1.33331 16.4024 2.3781 18.2621 4.23784C20.1219 6.09757 21.1666 8.61992 21.1666 11.25V11.25Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <!----------user profile---------------->
+            <div class="nav-user">
+              <a href="Profile.html" class="nav-user">
+                <div class="profile-icon">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.3333 14V8.16669H25.6666V15.1667H23.3333M23.3333 19.8334H25.6666V17.5H23.3333M11.6666 15.1667C14.7816 15.1667 21 16.73 21 19.8334V23.3334H2.33331V19.8334C2.33331 16.73 8.55165 15.1667 11.6666 15.1667ZM11.6666 4.66669C12.9043 4.66669 14.0913 5.15835 14.9665 6.03352C15.8416 6.90869 16.3333 8.09568 16.3333 9.33335C16.3333 10.571 15.8416 11.758 14.9665 12.6332C14.0913 13.5084 12.9043 14 11.6666 14C10.429 14 9.24198 13.5084 8.36682 12.6332C7.49164 11.758 6.99998 10.571 6.99998 9.33335C6.99998 8.09568 7.49164 6.90869 8.36682 6.03352C9.24198 5.15835 10.429 4.66669 11.6666 4.66669ZM11.6666 17.3834C8.20165 17.3834 4.54998 19.0867 4.54998 19.8334V21.1167H18.7833V19.8334C18.7833 19.0867 15.1316 17.3834 11.6666 17.3834ZM11.6666 6.88335C11.0169 6.88335 10.3937 7.14148 9.93424 7.60094C9.47477 8.06041 9.21665 8.68357 9.21665 9.33335C9.21665 9.98313 9.47477 10.6063 9.93424 11.0658C10.3937 11.5252 11.0169 11.7834 11.6666 11.7834C12.3164 11.7834 12.9396 11.5252 13.3991 11.0658C13.8585 10.6063 14.1166 9.98313 14.1166 9.33335C14.1166 8.68357 13.8585 8.06041 13.3991 7.60094C12.9396 7.14148 12.3164 6.88335 11.6666 6.88335Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <!-- Right side: cart + auth -->
+            <div class="cart-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.2355 19.1926H8.95234L9.76991 17.5273L23.3543 17.5027C23.8137 17.5027 24.2074 17.1746 24.2894 16.7207L26.1707 6.19062C26.2199 5.91445 26.1461 5.63008 25.9656 5.41406C25.8764 5.30775 25.7652 5.22211 25.6396 5.16309C25.514 5.10407 25.377 5.07308 25.2383 5.07227L7.95702 5.01484L7.80937 4.32031C7.7164 3.87734 7.31718 3.55469 6.86328 3.55469H2.63867C2.38267 3.55469 2.13716 3.65638 1.95614 3.8374C1.77513 4.01841 1.67343 4.26393 1.67343 4.51992C1.67343 4.77592 1.77513 5.02143 1.95614 5.20245C2.13716 5.38346 2.38267 5.48516 2.63867 5.48516H6.08124L6.72656 8.55312L8.31523 16.2449L6.26992 19.5836C6.1637 19.727 6.09972 19.8972 6.08523 20.075C6.07073 20.2528 6.10629 20.4312 6.18788 20.5898C6.35195 20.9152 6.68281 21.1203 7.04921 21.1203H8.7664C8.40032 21.6065 8.20258 22.1988 8.20312 22.8074C8.20312 24.3551 9.46093 25.6129 11.0086 25.6129C12.5562 25.6129 13.8141 24.3551 13.8141 22.8074C13.8141 22.1977 13.6117 21.6043 13.2508 21.1203H17.6559C17.2898 21.6065 17.092 22.1988 17.0926 22.8074C17.0926 24.3551 18.3504 25.6129 19.898 25.6129C21.4457 25.6129 22.7035 24.3551 22.7035 22.8074C22.7035 22.1977 22.5012 21.6043 22.1402 21.1203H25.2383C25.7687 21.1203 26.2035 20.6883 26.2035 20.1551C26.2019 19.8994 26.0993 19.6546 25.9179 19.4743C25.7366 19.294 25.4913 19.1927 25.2355 19.1926ZM8.35898 6.91797L24.1035 6.96992L22.5613 15.6051L10.1937 15.627L8.35898 6.91797ZM11.0086 23.6715C10.5328 23.6715 10.1445 23.2832 10.1445 22.8074C10.1445 22.3316 10.5328 21.9434 11.0086 21.9434C11.4844 21.9434 11.8726 22.3316 11.8726 22.8074C11.8726 23.0366 11.7816 23.2564 11.6196 23.4184C11.4575 23.5805 11.2378 23.6715 11.0086 23.6715ZM19.898 23.6715C19.4223 23.6715 19.034 23.2832 19.034 22.8074C19.034 22.3316 19.4223 21.9434 19.898 21.9434C20.3738 21.9434 20.7621 22.3316 20.7621 22.8074C20.7621 23.0366 20.6711 23.2564 20.509 23.4184C20.347 23.5805 20.1272 23.6715 19.898 23.6715Z"
+                  fill="black"
+                />
+              </svg>
+              <span class="cart-count">0</span>
+            </div>
+            <!-----login-->
+            <div class="auth-buttons">
+              <a href="#" class="login">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-------------------------------search---------------------->
+    <div class="search-bar">
+      <div class="search-input">
+        <input type="text" placeholder="Pencarian Produk" name="search" />
+        <!-- cancel-button -->
+        <a href="#" class="search-cancel">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m5 13.59L15.59 17L12 13.41L8.41 17L7 15.59L10.59 12L7 8.41L8.41 7L12 10.59L15.59 7L17 8.41L13.41 12z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-----LOGIN AND SIGNUP----------->
+    <div class="form">
+      <!---LOGIN---------->
+      <div class="login-form">
+        <!---CancelBtn-->
+        <a href="#" class="form-cancel">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="30"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 0C4.47727 0 0 4.47727 0 10C0 15.5227 4.47727 20 10 20C15.5227 20 20 15.5227 20 10C20 4.47727 15.5227 0 10 0ZM13.37 7.91545C13.5356 7.744 13.6272 7.51436 13.6252 7.276C13.6231 7.03764 13.5275 6.80963 13.3589 6.64107C13.1904 6.47252 12.9624 6.37691 12.724 6.37484C12.4856 6.37277 12.256 6.4644 12.0845 6.63L10 8.71455L7.91545 6.63C7.83159 6.54317 7.73128 6.47392 7.62037 6.42627C7.50946 6.37863 7.39016 6.35355 7.26946 6.3525C7.14875 6.35145 7.02904 6.37445 6.91731 6.42016C6.80559 6.46587 6.70409 6.53338 6.61873 6.61873C6.53338 6.70409 6.46587 6.80559 6.42016 6.91731C6.37445 7.02904 6.35145 7.14875 6.3525 7.26946C6.35355 7.39016 6.37863 7.50946 6.42627 7.62037C6.47392 7.73128 6.54317 7.83159 6.63 7.91545L8.71455 10L6.63 12.0845C6.54317 12.1684 6.47392 12.2687 6.42627 12.3796C6.37863 12.4905 6.35355 12.6098 6.3525 12.7305C6.35145 12.8513 6.37445 12.971 6.42016 13.0827C6.46587 13.1944 6.53338 13.2959 6.61873 13.3813C6.70409 13.4666 6.80559 13.5341 6.91731 13.5798C7.02904 13.6255 7.14875 13.6486 7.26946 13.6475C7.39016 13.6465 7.50946 13.6214 7.62037 13.5737C7.73128 13.5261 7.83159 13.4568 7.91545 13.37L10 11.2855L12.0845 13.37C12.256 13.5356 12.4856 13.6272 12.724 13.6252C12.9624 13.6231 13.1904 13.5275 13.3589 13.3589C13.5275 13.1904 13.6231 12.9624 13.6252 12.724C13.6272 12.4856 13.5356 12.256 13.37 12.0845L11.2855 10L13.37 7.91545Z"
+              fill="#9F9F9F"
+            />
+          </svg>
+        </a>
+        <strong>LOGIN</strong>
+        <!---Input---->
+        <form>
+          <input
+            type="email"
+            placeholder="example@gmail.com"
+            name="email"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <input type="submit" value="Log In" />
+        </form>
+        <!----forget signup---->
+        <div class="form-btns">
+          <a href="#" class="Forget">Forget Your Password?</a>
+          <a href="#" class="sign-up-btn">Create Account</a>
+        </div>
+      </div>
+
+      <!---SIGNUP---------->
+      <div class="sign-up-form">
+        <!---CancelBtn-->
+        <a href="#" class="form-cancel">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="30"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 0C4.47727 0 0 4.47727 0 10C0 15.5227 4.47727 20 10 20C15.5227 20 20 15.5227 20 10C20 4.47727 15.5227 0 10 0ZM13.37 7.91545C13.5356 7.744 13.6272 7.51436 13.6252 7.276C13.6231 7.03764 13.5275 6.80963 13.3589 6.64107C13.1904 6.47252 12.9624 6.37691 12.724 6.37484C12.4856 6.37277 12.256 6.4644 12.0845 6.63L10 8.71455L7.91545 6.63C7.83159 6.54317 7.73128 6.47392 7.62037 6.42627C7.50946 6.37863 7.39016 6.35355 7.26946 6.3525C7.14875 6.35145 7.02904 6.37445 6.91731 6.42016C6.80559 6.46587 6.70409 6.53338 6.61873 6.61873C6.53338 6.70409 6.46587 6.80559 6.42016 6.91731C6.37445 7.02904 6.35145 7.14875 6.3525 7.26946C6.35355 7.39016 6.37863 7.50946 6.42627 7.62037C6.47392 7.73128 6.54317 7.83159 6.63 7.91545L8.71455 10L6.63 12.0845C6.54317 12.1684 6.47392 12.2687 6.42627 12.3796C6.37863 12.4905 6.35355 12.6098 6.3525 12.7305C6.35145 12.8513 6.37445 12.971 6.42016 13.0827C6.46587 13.1944 6.53338 13.2959 6.61873 13.3813C6.70409 13.4666 6.80559 13.5341 6.91731 13.5798C7.02904 13.6255 7.14875 13.6486 7.26946 13.6475C7.39016 13.6465 7.50946 13.6214 7.62037 13.5737C7.73128 13.5261 7.83159 13.4568 7.91545 13.37L10 11.2855L12.0845 13.37C12.256 13.5356 12.4856 13.6272 12.724 13.6252C12.9624 13.6231 13.1904 13.5275 13.3589 13.3589C13.5275 13.1904 13.6231 12.9624 13.6252 12.724C13.6272 12.4856 13.5356 12.256 13.37 12.0845L11.2855 10L13.37 7.91545Z"
+              fill="#9F9F9F"
+            />
+          </svg>
+        </a>
+        <strong>Sign Up</strong>
+        <!---Input---->
+        <form>
+          <input
+            type="text"
+            placeholder="Nama Lengkap"
+            name="fullname"
+            required
+          />
+          <input
+            type="email"
+            placeholder="example@gmail.com"
+            name="email"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <input type="submit" value="Sign Up" />
+        </form>
+        <!----forget signup---->
+        <div class="form-btns">
+          <a href="#" class="already-account">Already Have Account?</a>
+        </div>
+      </div>
+    </div>
+
+    <!-------Cart-->
+
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .card {
+        border-radius: 1rem;
+      }
+
+      .btn-link {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .btn-link:hover {
+        color: #ffc107;
+      }
+
+      .form-control[type="number"] {
+        width: 60px;
+        text-align: center;
+      }
+
+      .card-body img {
+        max-height: 100px;
+        object-fit: contain;
+      }
+    </style>
+
+    <section class="h-100">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-10">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h3 class="fw-normal mb-0">Keranjang Belanja Anda</h3>
+              <div>
+                <p class="mb-0">
+                  <span class="text-muted">Sort by:</span>
+                  <a href="#!" class="text-body"
+                    >price <i class="fas fa-angle-down mt-1"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Produk Hasil Add to Cart -->
+            <!-- Header labels untuk daftar produk -->
+            <div class="card mb-3 cart-header">
+              <div class="card-body p-3">
+                <div
+                  class="row d-flex justify-content-between align-items-center fw-bold text-muted"
+                >
+                  <div class="col-md-2 col-lg-2 col-xl-2 text-center">
+                    Product
+                  </div>
+                  <div class="col-md-3 col-lg-3 col-xl-3">Name</div>
+                  <div class="col-md-3 col-lg-3 col-xl-2 text-center">
+                    Quantity
+                  </div>
+                  <div
+                    class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 text-center"
+                  >
+                    Price
+                  </div>
+                  <div class="col-md-1 col-lg-1 col-xl-1"></div>
+                </div>
+              </div>
+            </div>
+            <div id="cart-items"></div>
+            <!-- Discount code -->
+            <div id="discount-section" class="card mb-4" style="display: none">
+              <div class="card-body p-4 d-flex flex-row align-items-center">
+                <div class="form-outline flex-fill">
+                  <input
+                    type="text"
+                    id="discountCode"
+                    class="form-control form-control-lg"
+                  />
+                  <label class="form-label" for="discountCode"
+                    >Discount code</label
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-outline-warning btn-lg ms-3"
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
+
+            <!-- Total and Proceed -->
+            <div id="cart-summary">
+              <div class="card">
+                <div class="card-body text-end">
+                  <h4>Total: <span id="cart-total">Rp0</span></h4>
+                  <a
+                    href="pembayaran.html"
+                    class="btn btn-warning btn-lg mt-2 w-100"
+                    >Proceed to Pay</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- MDBootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.js"></script>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Profil Perusahaan -->
+        <div class="profil-perusahaan">
+          <a href="#" class="footer-logo">
+            <img src="images/IKIYO LOGO.png" alt="logo" />
+          </a>
+          <p>
+            Jl. Mayjen HR. Muhamad No. 27-29, Putat Gede, Kec. Sukomanunggal,
+            Kota Surabaya, Jawa Timur 60189, Indonesia
+          </p>
+          <div class="footer-social">
+            <a href="#" title="Instagram">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+
+            <a href="#" title="Facebook">
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+
+            <a href="#" title="WhatsApp">
+              <i class="fab fa-whatsapp fa-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigasi & Bantuan -->
+        <div class="footer-link-box">
+          <div>
+            <strong>Navigasi</strong>
+            <ul>
+              <li><a href="pemweb.html">Beranda</a></li>
+              <li><a href="pemweb.catalogue.html">Katalog</a></li>
+              <li><a href="Kotak-saran.html">Kotak Saran</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <strong>Bantuan</strong>
+            <ul>
+              <li><a href="#">Pembayaran</a></li>
+              <li><a href="#">Pengembalian</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="footer-subscribe">
+          <strong>Subscribe</strong>
+          <p>Subscribe email anda untuk dapatkan promo menarik</p>
+          <div class="subscribe-box">
+            <input type="email" placeholder="example@email.com" required />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="search.js"></script>
+    <script src="add-to-cart.js"></script>
+  </body>
+</html>

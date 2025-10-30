@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------------- Bagian Judul--------------------->
+        <title>IKIYO Furniture</title>
+    <!----------------------CSS eksternal-------------------->
+        <link rel="stylesheet" href="profile.css"/>
+    <!--------------------Input Ikon------------------------->
+        <link rel="shortcut icon" href="images/IKIYO LOGO.png"/>
+    <!--------------------Import font------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!------------------Header--------------------->
+<header>
+  <nav class="navigation">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <img src="images/IKIYO LOGO.png" width="200" height="200" alt="Logo">
+    </a>
+
+    <!-- Menu -->
+    <ul class="menu">
+      <li><a href="pemweb.html">Beranda</a></li>
+      <li><a href="pemweb.catalogue.html">Katalog</a></li>
+      <li><a href="#">Wishlist</a></li>
+      <li><a href="Kotak-saran.html">Kotak Saran</a></li>
+    </ul>
+    <!-- Right Side -->
+    <div class="nav-right">
+        <div class="nav-icons">
+                <!----buttons------->
+                <div class="nav-search-butttons">
+                         <a href="#" class="nav-search">
+                            <div class="search-icon">
+                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.5 23.5L18.2663 18.257M21.1666 11.25C21.1666 13.88 20.1219 16.4024 18.2621 18.2621C16.4024 20.1219 13.88 21.1666 11.25 21.1666C8.61992 21.1666 6.09757 20.1219 4.23784 18.2621C2.3781 16.4024 1.33331 13.88 1.33331 11.25C1.33331 8.61992 2.3781 6.09757 4.23784 4.23784C6.09757 2.3781 8.61992 1.33331 11.25 1.33331C13.88 1.33331 16.4024 2.3781 18.2621 4.23784C20.1219 6.09757 21.1666 8.61992 21.1666 11.25V11.25Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </a>
+                </div>
+                <!----------user profile---------------->
+                <div class="nav-user">
+                    <a href="#" class="nav-user">
+                        <div class="profile-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.3333 14V8.16669H25.6666V15.1667H23.3333M23.3333 19.8334H25.6666V17.5H23.3333M11.6666 15.1667C14.7816 15.1667 21 16.73 21 19.8334V23.3334H2.33331V19.8334C2.33331 16.73 8.55165 15.1667 11.6666 15.1667ZM11.6666 4.66669C12.9043 4.66669 14.0913 5.15835 14.9665 6.03352C15.8416 6.90869 16.3333 8.09568 16.3333 9.33335C16.3333 10.571 15.8416 11.758 14.9665 12.6332C14.0913 13.5084 12.9043 14 11.6666 14C10.429 14 9.24198 13.5084 8.36682 12.6332C7.49164 11.758 6.99998 10.571 6.99998 9.33335C6.99998 8.09568 7.49164 6.90869 8.36682 6.03352C9.24198 5.15835 10.429 4.66669 11.6666 4.66669ZM11.6666 17.3834C8.20165 17.3834 4.54998 19.0867 4.54998 19.8334V21.1167H18.7833V19.8334C18.7833 19.0867 15.1316 17.3834 11.6666 17.3834ZM11.6666 6.88335C11.0169 6.88335 10.3937 7.14148 9.93424 7.60094C9.47477 8.06041 9.21665 8.68357 9.21665 9.33335C9.21665 9.98313 9.47477 10.6063 9.93424 11.0658C10.3937 11.5252 11.0169 11.7834 11.6666 11.7834C12.3164 11.7834 12.9396 11.5252 13.3991 11.0658C13.8585 10.6063 14.1166 9.98313 14.1166 9.33335C14.1166 8.68357 13.8585 8.06041 13.3991 7.60094C12.9396 7.14148 12.3164 6.88335 11.6666 6.88335Z" fill="black"/>
+                                </svg>
+                        </div>
+                     </a>
+                </div>
+            <!-- Right side: cart + auth -->
+                <div class="cart-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.2355 19.1926H8.95234L9.76991 17.5273L23.3543 17.5027C23.8137 17.5027 24.2074 17.1746 24.2894 16.7207L26.1707 6.19062C26.2199 5.91445 26.1461 5.63008 25.9656 5.41406C25.8764 5.30775 25.7652 5.22211 25.6396 5.16309C25.514 5.10407 25.377 5.07308 25.2383 5.07227L7.95702 5.01484L7.80937 4.32031C7.7164 3.87734 7.31718 3.55469 6.86328 3.55469H2.63867C2.38267 3.55469 2.13716 3.65638 1.95614 3.8374C1.77513 4.01841 1.67343 4.26393 1.67343 4.51992C1.67343 4.77592 1.77513 5.02143 1.95614 5.20245C2.13716 5.38346 2.38267 5.48516 2.63867 5.48516H6.08124L6.72656 8.55312L8.31523 16.2449L6.26992 19.5836C6.1637 19.727 6.09972 19.8972 6.08523 20.075C6.07073 20.2528 6.10629 20.4312 6.18788 20.5898C6.35195 20.9152 6.68281 21.1203 7.04921 21.1203H8.7664C8.40032 21.6065 8.20258 22.1988 8.20312 22.8074C8.20312 24.3551 9.46093 25.6129 11.0086 25.6129C12.5562 25.6129 13.8141 24.3551 13.8141 22.8074C13.8141 22.1977 13.6117 21.6043 13.2508 21.1203H17.6559C17.2898 21.6065 17.092 22.1988 17.0926 22.8074C17.0926 24.3551 18.3504 25.6129 19.898 25.6129C21.4457 25.6129 22.7035 24.3551 22.7035 22.8074C22.7035 22.1977 22.5012 21.6043 22.1402 21.1203H25.2383C25.7687 21.1203 26.2035 20.6883 26.2035 20.1551C26.2019 19.8994 26.0993 19.6546 25.9179 19.4743C25.7366 19.294 25.4913 19.1927 25.2355 19.1926ZM8.35898 6.91797L24.1035 6.96992L22.5613 15.6051L10.1937 15.627L8.35898 6.91797ZM11.0086 23.6715C10.5328 23.6715 10.1445 23.2832 10.1445 22.8074C10.1445 22.3316 10.5328 21.9434 11.0086 21.9434C11.4844 21.9434 11.8726 22.3316 11.8726 22.8074C11.8726 23.0366 11.7816 23.2564 11.6196 23.4184C11.4575 23.5805 11.2378 23.6715 11.0086 23.6715ZM19.898 23.6715C19.4223 23.6715 19.034 23.2832 19.034 22.8074C19.034 22.3316 19.4223 21.9434 19.898 21.9434C20.3738 21.9434 20.7621 22.3316 20.7621 22.8074C20.7621 23.0366 20.6711 23.2564 20.509 23.4184C20.347 23.5805 20.1272 23.6715 19.898 23.6715Z" fill="black"/>
+                        </svg>
+                             <i class="fas fa-shopping-cart"></i>
+                             <span class="cart-count">0</span>
+                </div>
+               <!-----login-->
+                        <div class="auth-buttons">
+                            <a href="#" class="login">Login</a>
+                        </div>
+        </div>
+    </div>
+    </nav>
+</header>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <!----------------landing page------------------>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Jelajahi berbagai produk dari kayu lokal!</h2>
+            <p> <i>"Dari Batang Kayu Jati hingga Trembesi, IKIYO Merajut Kehangatan dan Cinta pada Negeri."</i></p>
+        </div>
+        </section>
+            <!----Search-->
+                    <div class="search-bar">
+                            <div class="search-input">
+                                    <input type="text" placeholder="Pencarian Produk" name="search"/>
+                                  <a href="#" class="search-cancel">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                     <path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m5 13.59L15.59 17L12 13.41L8.41 17L7 15.59L10.59 12L7 8.41L8.41 7L12 10.59L15.59 7L17 8.41L13.41 12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                    </div>
+                    <script src="search.js"> </script>
+        <script>
+        //for login Signup=================//
+        document.addEventListener('click', function(event){
+            if (event.target.closest('.login, .already-account')) {
+                const formElement = document.querySelector('.form');
+                formElement.classList.add('login-active');
+                formElement.classList.remove('sign-up-active');
+            }
+
+            //check jika user menekan element yang memiliki classs "sign-up-btn"  lalu muncul signup
+            else if (event.target.closest('.sign-up-btn')) {
+                const formElement = document.querySelector('.form');
+                formElement.classList.remove('login-active');
+                formElement.classList.add('sign-up-active');
+            }
+
+              //check jika user menekan element yang memiliki classs "form-cancel"  lalu tutup semua
+            else if (event.target.closest('.form-cancel')) {
+                const formElement = document.querySelector('.form');
+                formElement.classList.remove('login-active');
+                formElement.classList.remove('sign-up-active');
+            }
+        })
+    </script>
+        <!-----profil text----->
+            <section class="Profil-text">
+                 <div class="profil-content">
+                    <h2 style="text-align: center;">Selamat datang di Halaman Profil!</h2>
+                    <p style="text-align: center;"> <i>"Lengkapi data diri anda untuk meningkatkan pengalaman dan kepuasan dalam berbelanja"</i></p>
+                </div>
+            </section>
+
+             <!-------Form Data Diri-->
+    <div class="container-data">
+        <section class="Profil">
+            <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">  Username</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Manusia123">
+            </div>
+             <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">  Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">  Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password123">
+            </div>
+            <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">  Tanggal Lahir</label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="DD/MM/YYYY">
+            </div>
+            <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">  Nomor Telepon</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+622394029424">
+            </div>
+        </section>
+        <section class="Alamat">
+            <label for="exampleFormControlInput1" class="form-label">  Negara</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Indonesia">
+            <label for="exampleDataList" class="form-label">Provinsi</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Pilih Provinsi">
+                    <datalist id="datalistOptions">
+                                        <option value="Sumatra Barat">
+                                        <option value="Jawa Timur">
+                                        <option value="Sulawesi Tengah">
+                                        <option value="Kalimantan Barat">
+                                        <option value="Nusa Tenggara Timur">
+                                        <option value="Nusa Tenggara Timur">
+                                        <option value="Bali">
+                                        <option value="Papua Barat"></option>
+                                    </datalist>
+                <label for="exampleDataList" class="form-label">  Kabupaten/Kota</label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Pilih Provinsi">
+                                <datalist id="datalistOptions">
+                                        <option value="Sumatra Barat">
+                                        <option value="Jawa Timur">
+                                        <option value="Sulawesi Tengah">
+                                        <option value="Kalimantan Barat">
+                                        <option value="Nusa Tenggara Timur">
+                                        <option value="Nusa Tenggara Timur">
+                                        <option value="Bali">
+                                        <option value="Papua Barat"></option>
+                                    </datalist>
+                <label for="exampleDataList" class="form-label">  Kecamatan</label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Pilih Provinsi">
+                                <datalist id="datalistOptions">
+                                        <option value="Sumatra Barat">
+                                        <option value="Jawa Timur">
+                                        <option value="Sulawesi Tengah">
+                                        <option value="Kalimantan Barat">
+                                        <option value="Nusa Tenggara Timur">
+                                        <option value="Nusa Tenggara Timur">
+                                        <option value="Bali">
+                                        <option value="Papua Barat"></option>
+                                    </datalist>
+                <label for="exampleFormControlInput1" class="form-label">Kode Pos</label>
+                                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">  Detail Nama Jalan</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+        </section>
+    </div>
+            <!-------btn.simpan-->
+                <button class="btn-simpan">Simpan</button>
+
+    <!----footer----->
+    <footer class="footer">
+    <div class="footer-container">
+        <!-- Profil Perusahaan -->
+        <div class="profil-perusahaan">
+            <a href="#" class="footer-logo">
+                <img src="images/IKIYO LOGO.png" alt="logo">
+            </a>
+            <p>
+                Jl. Mayjen HR. Muhamad No. 27-29, Putat Gede, Kec. Sukomanunggal, Kota Surabaya, Jawa Timur 60189, Indonesia
+            </p>
+            <div class="footer-social">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9S287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7s74.7 33.5 74.7 74.7s-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8c-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8s26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9c-26.2-26.2-58-34.4-93.9-36.2c-37-2.1-147.9-2.1-184.9 0c-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9c1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0c35.9-1.7 67.7-9.9 93.9-36.2c26.2-26.2 34.4-58 36.2-93.9c2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6c-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6c29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6c11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg></a>
+
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592c.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"/></svg></a>
+
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977c0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35"/></svg></a>
+            </div>
+        </div>
+
+        <!-- Navigasi & Bantuan -->
+        <div class="footer-link-box">
+            <div>
+                <strong>Navigasi</strong>
+                <ul>
+                    <li><a href="pemweb.html">Beranda</a></li>
+                    <li><a href="pemweb.catalogue.html">Katalog</a></li>
+                    <li><a href="Kotak-saran.html">Kotak Saran</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <strong>Bantuan</strong>
+                <ul>
+                    <li><a href="#">Pembayaran</a></li>
+                    <li><a href="#">Pengembalian</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="footer-subscribe">
+            <strong>Subscribe</strong>
+            <p>Subscribe email anda untuk dapatkan promo menarik</p>
+            <div class="subscribe-box">
+                <input type="email" placeholder="example@email.com" required />
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script src="cart.js"></script>
+        <script src="search.js"></script>
+        <script src="add-to-cart.js"></script>
+    </body>
+</html>

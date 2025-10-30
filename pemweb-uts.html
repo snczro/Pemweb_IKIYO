@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Pendaftaran Mahasiswa</title>
+    </head>
+    </form>
+    <body>
+        <style>
+        body {
+            font-family: Arial;
+            background-color: #f3e9ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            width: 100%;
+        }
+
+        .judul {
+            text-align: center; 
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-pendaftaran {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 6px;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .btn-simpan {
+            background-color: #ff009d;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .btn-simpan {
+            background-color: #ff009d;
+        }
+        </style>
+            <form>
+                <div class="form-container">
+                    <h2 class="judul">Form Pendaftaran Mahasiswa</h2>
+                        <div class="form-pendaftaran">
+            <div class="username">
+                <label class="form-label">Masukkan Username</label>
+                <input type="text" class="form-control" placeholder="Manusia123">
+            </div>
+            <div class="email">
+                <label class="form-label">Masukkan Email</label>
+                <input type="email" class="form-control" placeholder="name@example.com">
+            </div>
+            <div class="alamat">
+                <label class="form-label">Masukkan Alamat</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+                <button class="btn-simpan">Simpan</button>
+        </div>
+        </body>
+    </style>
+    </body>
+</html>
