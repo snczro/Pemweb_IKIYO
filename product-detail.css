@@ -564,28 +564,15 @@ ul {
     margin-bottom: 25px;
 }
 
-.color-dot {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.stock-info {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #444;
 }
 
-.purple { background: #6457a6; }
-.gray { background: #404040; }
-.gold { background: #c6a15b; }
-
-.color-dot:hover {
-    border: 2px solid #000;
-    transform: scale(1.1);
-}
-
-.actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.stock-info span {
+  font-weight: bold;
+  color: #B88E2F;
 }
 .cart-btn, .wishlist-btn {
     border: 1px solid #B88E2F;
