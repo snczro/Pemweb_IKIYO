@@ -165,15 +165,17 @@
             </a>
             <strong>LOGIN</strong>
             <!---Input---->
-            <form>
+            <form action="login.php" method="POST">
+                <input type="text" placeholder="username123" name="username" required>
                 <input type="email" placeholder="example@gmail.com" name="email" required>
                 <input type="password" placeholder="Password" name="password" required>
                 <input type="submit" value="Log In"/>
+                <button type="submit" name="login-btn" class="login">Masuk</button>
             </form>
             <!----forget signup---->
             <div class="form-btns">
-                <a href="#" class="Forget">Forget Your Password?</a>
-                <a href="#" class="sign-up-btn">Create Account</a>
+                <a href="#" class="Forget">Lupa Password?</a>
+                <a href="#" class="sign-up-btn">Buat Akun</a>
             </div>
         </div>
 
@@ -187,15 +189,17 @@
             </a>
             <strong>Sign Up</strong>
             <!---Input---->
-            <form>
+            <form action="signup.php" method="POST">
                 <input type="text" placeholder="Nama Lengkap" name="fullname" required>
+                <input type="text" placeholder="username123" name="username" required>
                 <input type="email" placeholder="example@gmail.com" name="email" required>
                 <input type="password" placeholder="Password" name="password" required>
                 <input type="submit" value="Sign Up"/>
+                <button type="submit" name="sign-up-btn" class="sign-up-btn">Daftar</button>
             </form>
             <!----forget signup---->
             <div class="form-btns">
-                <a href="#" class="already-account">Already Have Account?</a>
+                <a href="#" class="already-account">Sudah punya akun?</a>
             </div>
         </div>
     </div>
