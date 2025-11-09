@@ -203,6 +203,31 @@
             </div>
         </div>
     </div>
+     <script>
+        //for login Signup=================//
+        document.addEventListener('click', function(event){
+            
+            if (event.target.closest('.login, .already-account')) {
+                const formElement = document.querySelector('.form');
+                formElement.classList.add('login-active');
+                formElement.classList.remove('sign-up-active');
+            }
+
+            
+            else if (event.target.closest('.sign-up-btn')) {
+                const formElement = document.querySelector('.form');
+                formElement.classList.remove('login-active');
+                formElement.classList.add('sign-up-active');
+            }
+
+            
+            else if (event.target.closest('.form-cancel')) {
+                const formElement = document.querySelector('.form');
+                formElement.classList.remove('login-active');
+                formElement.classList.remove('sign-up-active');
+            }
+        })
+    </script>
     
             <!--==================Popular Section=================-->
         <section id="popular">
@@ -325,32 +350,6 @@
 
     </div>
 </section>
-
-    <script>
-        //for login Signup=================//
-        document.addEventListener('click', function(event){
-            
-            if (event.target.closest('.login, .already-account')) {
-                const formElement = document.querySelector('.form');
-                formElement.classList.add('login-active');
-                formElement.classList.remove('sign-up-active');
-            }
-
-            
-            else if (event.target.closest('.sign-up-btn')) {
-                const formElement = document.querySelector('.form');
-                formElement.classList.remove('login-active');
-                formElement.classList.add('sign-up-active');
-            }
-
-            
-            else if (event.target.closest('.form-cancel')) {
-                const formElement = document.querySelector('.form');
-                formElement.classList.remove('login-active');
-                formElement.classList.remove('sign-up-active');
-            }
-        })
-    </script>
              <!-------------Shopping Banner----------------->
             <section id="shopping-banner">
                 <div class="shopping-banner-container">
