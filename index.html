@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!------------------- Bagian Judul--------------------->
+        <title>IKIYO Furniture</title>
+    <!----------------------CSS eksternal-------------------->
+        <link rel="stylesheet" href="index.css"/>
+    <!--------------------Input Ikon------------------------->
+        <link rel="shortcut icon" href="images/IKIYO LOGO.png"/>
+    <!--------------------Import font------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!------------------Header--------------------->
+<header>
+  <nav class="navigation">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <img src="images/IKIYO LOGO.png" width="200" height="200" alt="Logo">
+    </a>
+
+    <!-- Menu -->
+    <ul class="menu">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="pemweb.catalogue.html">Katalog</a></li>
+      <li><a href="#" id="header-wishlist">Wishlist</a></li>
+      <li><a href="Kotak-saran.html">Kotak Saran</a></li>
+    </ul>
+    <!-- Right Side -->
+    <div class="nav-right">
+        <div class="nav-icons">
+                <!----buttons------->
+                <div class="nav-search-butttons">
+                         <a href="#" class="nav-search">
+                            <div class="search-icon">
+                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.5 23.5L18.2663 18.257M21.1666 11.25C21.1666 13.88 20.1219 16.4024 18.2621 18.2621C16.4024 20.1219 13.88 21.1666 11.25 21.1666C8.61992 21.1666 6.09757 20.1219 4.23784 18.2621C2.3781 16.4024 1.33331 13.88 1.33331 11.25C1.33331 8.61992 2.3781 6.09757 4.23784 4.23784C6.09757 2.3781 8.61992 1.33331 11.25 1.33331C13.88 1.33331 16.4024 2.3781 18.2621 4.23784C20.1219 6.09757 21.1666 8.61992 21.1666 11.25V11.25Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </a>
+                </div>
+                <!----------user profile---------------->
+                <div class="nav-user">
+                    <a href="Profile.html" class="nav-user">
+                        <div class="profile-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.3333 14V8.16669H25.6666V15.1667H23.3333M23.3333 19.8334H25.6666V17.5H23.3333M11.6666 15.1667C14.7816 15.1667 21 16.73 21 19.8334V23.3334H2.33331V19.8334C2.33331 16.73 8.55165 15.1667 11.6666 15.1667ZM11.6666 4.66669C12.9043 4.66669 14.0913 5.15835 14.9665 6.03352C15.8416 6.90869 16.3333 8.09568 16.3333 9.33335C16.3333 10.571 15.8416 11.758 14.9665 12.6332C14.0913 13.5084 12.9043 14 11.6666 14C10.429 14 9.24198 13.5084 8.36682 12.6332C7.49164 11.758 6.99998 10.571 6.99998 9.33335C6.99998 8.09568 7.49164 6.90869 8.36682 6.03352C9.24198 5.15835 10.429 4.66669 11.6666 4.66669ZM11.6666 17.3834C8.20165 17.3834 4.54998 19.0867 4.54998 19.8334V21.1167H18.7833V19.8334C18.7833 19.0867 15.1316 17.3834 11.6666 17.3834ZM11.6666 6.88335C11.0169 6.88335 10.3937 7.14148 9.93424 7.60094C9.47477 8.06041 9.21665 8.68357 9.21665 9.33335C9.21665 9.98313 9.47477 10.6063 9.93424 11.0658C10.3937 11.5252 11.0169 11.7834 11.6666 11.7834C12.3164 11.7834 12.9396 11.5252 13.3991 11.0658C13.8585 10.6063 14.1166 9.98313 14.1166 9.33335C14.1166 8.68357 13.8585 8.06041 13.3991 7.60094C12.9396 7.14148 12.3164 6.88335 11.6666 6.88335Z" fill="black"/>
+                                </svg>
+                        </div>
+                     </a>
+                </div>
+            <!-- Right side: cart + auth -->
+            <div class="cart-icon">
+                    <a href="cart.html" class="nav-cart">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.2355 19.1926H8.95234L9.76991 17.5273L23.3543 17.5027C23.8137 17.5027 24.2074 17.1746 24.2894 16.7207L26.1707 6.19062C26.2199 5.91445 26.1461 5.63008 25.9656 5.41406C25.8764 5.30775 25.7652 5.22211 25.6396 5.16309C25.514 5.10407 25.377 5.07308 25.2383 5.07227L7.95702 5.01484L7.80937 4.32031C7.7164 3.87734 7.31718 3.55469 6.86328 3.55469H2.63867C2.38267 3.55469 2.13716 3.65638 1.95614 3.8374C1.77513 4.01841 1.67343 4.26393 1.67343 4.51992C1.67343 4.77592 1.77513 5.02143 1.95614 5.20245C2.13716 5.38346 2.38267 5.48516 2.63867 5.48516H6.08124L6.72656 8.55312L8.31523 16.2449L6.26992 19.5836C6.1637 19.727 6.09972 19.8972 6.08523 20.075C6.07073 20.2528 6.10629 20.4312 6.18788 20.5898C6.35195 20.9152 6.68281 21.1203 7.04921 21.1203H8.7664C8.40032 21.6065 8.20258 22.1988 8.20312 22.8074C8.20312 24.3551 9.46093 25.6129 11.0086 25.6129C12.5562 25.6129 13.8141 24.3551 13.8141 22.8074C13.8141 22.1977 13.6117 21.6043 13.2508 21.1203H17.6559C17.2898 21.6065 17.092 22.1988 17.0926 22.8074C17.0926 24.3551 18.3504 25.6129 19.898 25.6129C21.4457 25.6129 22.7035 24.3551 22.7035 22.8074C22.7035 22.1977 22.5012 21.6043 22.1402 21.1203H25.2383C25.7687 21.1203 26.2035 20.6883 26.2035 20.1551C26.2019 19.8994 26.0993 19.6546 25.9179 19.4743C25.7366 19.294 25.4913 19.1927 25.2355 19.1926ZM8.35898 6.91797L24.1035 6.96992L22.5613 15.6051L10.1937 15.627L8.35898 6.91797ZM11.0086 23.6715C10.5328 23.6715 10.1445 23.2832 10.1445 22.8074C10.1445 22.3316 10.5328 21.9434 11.0086 21.9434C11.4844 21.9434 11.8726 22.3316 11.8726 22.8074C11.8726 23.0366 11.7816 23.2564 11.6196 23.4184C11.4575 23.5805 11.2378 23.6715 11.0086 23.6715ZM19.898 23.6715C19.4223 23.6715 19.034 23.2832 19.034 22.8074C19.034 22.3316 19.4223 21.9434 19.898 21.9434C20.3738 21.9434 20.7621 22.3316 20.7621 22.8074C20.7621 23.0366 20.6711 23.2564 20.509 23.4184C20.347 23.5805 20.1272 23.6715 19.898 23.6715Z" fill="black"/>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </a>
+            </div>
+            <!-----login-->
+                        <div class="auth-buttons">
+                            <a href="#" class="login">Login</a>
+                        </div>
+        </div>
+    </div>
+  </nav>
+</header>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <!----------------landing page------------------>
+    <section class="hero">
+        <div class="hero-content">
+            <span>New Arrival!</span>
+            <h1>Discover Our New Collection</h1>
+            <p>Temukan berbagai produk menarik dengan desain modern, minimalis, dan harga terjangkau.</p>
+                <button><a href="membership.html">Bergabung dengan Membership</a></button>
+        </div>
+    </section>
+
+    <section class="produk">
+        <h2 style="text-align: center;">Jelajahi berbagai produk dari kayu lokal!</h2>
+        <p style="text-align: center;"><i>"Dari Batang Kayu Jati hingga Trembesi, IKIYO Merajut Kehangatan dan Cinta pada Negeri."</i></p>
+    </section>
+    <!----------------------Kategori------------------------>
+        <section id="category">
+
+        <a href="pemweb.catalogue.html" class="category-box">
+            <div class="category-img">
+                <img src="images/c1.png" alt="Kursi">
+            </div>
+             <strong>Kursi</strong>
+        </a>
+
+        <a href="pemweb.catalogue.html" class="category-box">
+            <div class="category-img">
+                <img src="images/c2.png" alt="Meja">
+             </div>
+                <strong>Meja</strong>
+         </a>
+
+         <a href="pemweb.catalogue.html" class="category-box">
+            <div class="category-img">
+             <img src="images/c3.png" alt="Sofa">
+             </div>
+            <strong>Sofa</strong>
+        </a>
+
+        <a href="pemweb.catalogue.html" class="category-box">
+             <div class="category-img">
+                 <img src="images/c4.png" alt="Springbed">
+            </div>
+            <strong>Springbed</strong>
+        </a>
+
+         <a href="pemweb.catalogue.html" class="category-box">
+             <div class="category-img">
+                <img src="images/c5.webp" alt="Lampu Tidur">
+            </div>
+                <strong>Lampu Tidur</strong>
+        </a>
+
+         <a href="pemweb.catalogue.html" class="category-box">
+            <div class="category-img">
+                <img src="images/c6.png" alt="Kabinet">
+            </div>
+            <strong>Kabinet</strong>
+        </a>
+    </section>
+
+    
+<!-------------------------------search---------------------->
+<div class="search-bar">
+  <div class="search-input">
+    <input type="text" placeholder="Pencarian Produk" name="search"/>
+    <!-- cancel-button -->
+    <a href="#" class="search-cancel">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2m5 13.59L15.59 17L12 13.41L8.41 17L7 15.59L10.59 12L7 8.41L8.41 7L12 10.59L15.59 7L17 8.41L13.41 12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+    <!-----LOGIN AND SIGNUP----------->
+    <div class="form">
+        <!---LOGIN---------->
+        <div class="login-form">
+            <!---CancelBtn-->
+            <a href="#" class="form-cancel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47727 0 0 4.47727 0 10C0 15.5227 4.47727 20 10 20C15.5227 20 20 15.5227 20 10C20 4.47727 15.5227 0 10 0ZM13.37 7.91545C13.5356 7.744 13.6272 7.51436 13.6252 7.276C13.6231 7.03764 13.5275 6.80963 13.3589 6.64107C13.1904 6.47252 12.9624 6.37691 12.724 6.37484C12.4856 6.37277 12.256 6.4644 12.0845 6.63L10 8.71455L7.91545 6.63C7.83159 6.54317 7.73128 6.47392 7.62037 6.42627C7.50946 6.37863 7.39016 6.35355 7.26946 6.3525C7.14875 6.35145 7.02904 6.37445 6.91731 6.42016C6.80559 6.46587 6.70409 6.53338 6.61873 6.61873C6.53338 6.70409 6.46587 6.80559 6.42016 6.91731C6.37445 7.02904 6.35145 7.14875 6.3525 7.26946C6.35355 7.39016 6.37863 7.50946 6.42627 7.62037C6.47392 7.73128 6.54317 7.83159 6.63 7.91545L8.71455 10L6.63 12.0845C6.54317 12.1684 6.47392 12.2687 6.42627 12.3796C6.37863 12.4905 6.35355 12.6098 6.3525 12.7305C6.35145 12.8513 6.37445 12.971 6.42016 13.0827C6.46587 13.1944 6.53338 13.2959 6.61873 13.3813C6.70409 13.4666 6.80559 13.5341 6.91731 13.5798C7.02904 13.6255 7.14875 13.6486 7.26946 13.6475C7.39016 13.6465 7.50946 13.6214 7.62037 13.5737C7.73128 13.5261 7.83159 13.4568 7.91545 13.37L10 11.2855L12.0845 13.37C12.256 13.5356 12.4856 13.6272 12.724 13.6252C12.9624 13.6231 13.1904 13.5275 13.3589 13.3589C13.5275 13.1904 13.6231 12.9624 13.6252 12.724C13.6272 12.4856 13.5356 12.256 13.37 12.0845L11.2855 10L13.37 7.91545Z" fill="#9F9F9F"/>
+            </svg>
+            </a>
+            <strong>LOGIN</strong>
+            <!---Input---->
+            <form action="login.php" method="POST">
+                <input type="text" placeholder="username123" name="username" required>
+                <input type="email" placeholder="example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="submit" value="Log In"/>
+                <button type="submit" name="login-btn" class="login">Masuk</button>
+            </form>
+            <!----forget signup---->
+            <div class="form-btns">
+                <a href="#" class="Forget">Lupa Password?</a>
+                <a href="#" class="sign-up-btn">Buat Akun</a>
+            </div>
+        </div>
+
+         <!---SIGNUP---------->
+        <div class="sign-up-form">
+            <!---CancelBtn-->
+            <a href="#" class="form-cancel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47727 0 0 4.47727 0 10C0 15.5227 4.47727 20 10 20C15.5227 20 20 15.5227 20 10C20 4.47727 15.5227 0 10 0ZM13.37 7.91545C13.5356 7.744 13.6272 7.51436 13.6252 7.276C13.6231 7.03764 13.5275 6.80963 13.3589 6.64107C13.1904 6.47252 12.9624 6.37691 12.724 6.37484C12.4856 6.37277 12.256 6.4644 12.0845 6.63L10 8.71455L7.91545 6.63C7.83159 6.54317 7.73128 6.47392 7.62037 6.42627C7.50946 6.37863 7.39016 6.35355 7.26946 6.3525C7.14875 6.35145 7.02904 6.37445 6.91731 6.42016C6.80559 6.46587 6.70409 6.53338 6.61873 6.61873C6.53338 6.70409 6.46587 6.80559 6.42016 6.91731C6.37445 7.02904 6.35145 7.14875 6.3525 7.26946C6.35355 7.39016 6.37863 7.50946 6.42627 7.62037C6.47392 7.73128 6.54317 7.83159 6.63 7.91545L8.71455 10L6.63 12.0845C6.54317 12.1684 6.47392 12.2687 6.42627 12.3796C6.37863 12.4905 6.35355 12.6098 6.3525 12.7305C6.35145 12.8513 6.37445 12.971 6.42016 13.0827C6.46587 13.1944 6.53338 13.2959 6.61873 13.3813C6.70409 13.4666 6.80559 13.5341 6.91731 13.5798C7.02904 13.6255 7.14875 13.6486 7.26946 13.6475C7.39016 13.6465 7.50946 13.6214 7.62037 13.5737C7.73128 13.5261 7.83159 13.4568 7.91545 13.37L10 11.2855L12.0845 13.37C12.256 13.5356 12.4856 13.6272 12.724 13.6252C12.9624 13.6231 13.1904 13.5275 13.3589 13.3589C13.5275 13.1904 13.6231 12.9624 13.6252 12.724C13.6272 12.4856 13.5356 12.256 13.37 12.0845L11.2855 10L13.37 7.91545Z" fill="#9F9F9F"/>
+            </svg>
+            </a>
+            <strong>Sign Up</strong>
+            <!---Input---->
+            <form action="signup.php" method="POST">
+                <input type="text" placeholder="Nama Lengkap" name="fullname" required>
+                <input type="text" placeholder="username123" name="username" required>
+                <input type="email" placeholder="example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="submit" value="Sign Up"/>
+                <button type="submit" name="sign-up-btn" class="sign-up-btn">Daftar</button>
+            </form>
+            <!----forget signup---->
+            <div class="form-btns">
+                <a href="#" class="already-account">Sudah punya akun?</a>
+            </div>
+        </div>
+    </div>
+     <script>
+        //for login Signup=================//
+        document.addEventListener('click', function(event){
+            
+            if (event.target.closest('.login, .already-account')) {
+                const formElement = document.querySelector('.form');
+                formElement.classList.add('login-active');
+                formElement.classList.remove('sign-up-active');
+            }
+
+            
+            else if (event.target.closest('.sign-up-btn')) {
+                const formElement = document.querySelector('.form');
+                formElement.classList.remove('login-active');
+                formElement.classList.add('sign-up-active');
+            }
+
+            
+            else if (event.target.closest('.form-cancel')) {
+                const formElement = document.querySelector('.form');
+                formElement.classList.remove('login-active');
+                formElement.classList.remove('sign-up-active');
+            }
+        });
+    </script>
+    
+            <!--==================Popular Section=================-->
+        <section id="popular">
+            <h2>Popular Furniture</h2>
+            <div class="popular-container">
+                <!---Product-Container========--->
+                <div class="popular-product-container">
+
+                    <!-- Produk 1 -->
+        <div class="product-box">
+            <a href="product-detail.html" class="product-box-img">
+                <img src="https://i.pinimg.com/1200x/3e/c2/d0/3ec2d06b4968f35066f2178bd11d0151.jpg" alt="Sofa">
+            </a>
+            <div class="product-box-text">
+                <a href="#" class="product-text-title"> Sofa Keluarga</a>
+                <span class="price">Rp.400.000</span>
+                <button type="button" class="add-to-cart" data-name="Sofa Keluarga" data-price="400000" data-image="https://i.pinimg.com/1200x/3e/c2/d0/3ec2d06b4968f35066f2178bd11d0151.jpg">
+                 Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product-box">
+            <a href="product-detail.html" class="product-box-img">
+                <img src="images/p3.webp" alt="Sofa">
+            </a>
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Kursi Damian</a>
+                <span class="price">Rp.2.500.000</span>
+                <button type="button" class="add-to-cart" data-name="Kursi Damian" data-price="2500000" data-image="images/p3.webp">
+                 Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product-box">
+            <a href="product-detail.html" class="product-box-img">
+                <img src="https://i.pinimg.com/736x/cb/57/8c/cb578c3f05c75f3f75efc2b207c897d7.jpg" alt="Meja Makan">
+            </a>
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Meja Makan</a>
+                <span class="price">Rp.400.000</span>
+                <button type="button" class="add-to-cart" data-name="Meja Makan" data-price="400000" data-image="https://i.pinimg.com/736x/cb/57/8c/cb578c3f05c75f3f75efc2b207c897d7.jpg">
+                 Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Produk 4 -->
+        <div class="product-box">
+            <a href="product-detail.html" class="product-box-img">
+                <img src="images/p10.png" alt="Luxury Sofa">
+            </a>
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Meja Rias</a>
+                <span class="price">Rp.999.000</span>
+                <button type="button" class="add-to-cart" data-name="Meja Rias" data-price="999000" data-image="images/p10.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Produk 5 (baris kedua) -->
+        <div class="product-box">
+            <a href="product-detail.html" class="product-box-img">
+                <img src="images/p4.webp" alt="Furniture">
+            </a>
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Meja Antik</a>
+                <span class="price">Rp.600.000</span>
+                 <button type="button" class="add-to-cart" data-name="Meja Antik" data-price="600000" data-image="images/p4.webp">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Produk 6 -->
+        <div class="product-box">
+            <a href="product-detail.html" class="product-box-img">
+                <img src="images/c6.png" alt="Kursi">
+            </a>
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Lemari Kayu</a>
+                <span class="price">Rp.300.000</span>
+                <button type="button" class="add-to-cart" data-name="Lemari Kayu" data-price="300000" data-image="images/c6.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Produk 7 -->
+        <div class="product-box">
+            <a href="product-detail.html" class="product-box-img">
+                <img src="images/p4.png" alt="Lemari">
+            </a>
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Kursi Cassanova </a>
+                <span class="price">Rp.900.000</span>
+                <button type="button" class="add-to-cart" data-name="Kursi Cassanova" data-price="900000" data-image="images/p4.png">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Produk 8 -->
+        <div class="product-box">
+            <a href="product-detail.html" class="product-box-img">
+                <img src="images/p2.webp" alt="Rak">
+            </a>
+            <div class="product-box-text">
+                <a href="#" class="product-text-title">Kursi Lodia</a>
+                <span class="price">Rp.240.000</span>
+                <button type="button" class="add-to-cart" data-name="Kursi Lodia" data-price="240000" data-image="images/p2.webp">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+             <!-------------Shopping Banner----------------->
+            <section id="shopping-banner">
+                <div class="shopping-banner-container">
+                    <!-----text-->
+                    <div class="shopping-banner-text">
+                        <h4>50+ Inspirasi Interior Ruangan</h4>
+                        <p>Desainer kami telah membuat banyak prototipe kamar yang indah yang menginspirasi Anda</p>
+                        <div class="shopping-banner-button">
+                        </div>
+                        
+                    </div>
+                    <!----img-->
+                    <div class="shopping-banner-img">
+                        <img src="images/shop.png" alt="Shopping banner"/>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+        </div>
+                <!---Services--=========-->
+        <section class="services">
+            <!--service-box---->
+            <div class="service-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="54" height="60" viewBox="0 0 54 60" fill="none">
+                <path d="M46.3547 3.51562C45.0744 3.51562 43.8741 3.86121 42.839 4.46156V1.75781C42.839 0.787031 42.052 0 41.0812 0H12.9562C11.9853 0 11.1983 0.787031 11.1983 1.75781V4.48301C10.155 3.8693 8.94102 3.51562 7.64551 3.51562C3.76848 3.51562 0.614258 6.66984 0.614258 10.5469C0.614258 13.5041 1.49059 16.3615 3.14844 18.8102C5.97078 22.9789 9.45113 24.0607 12.331 25.2127C13.9916 29.348 17.3496 32.6252 21.5384 34.1769L20.2422 42.4219H19.9875C17.0797 42.4219 14.714 44.7875 14.714 47.6953V56.4844H12.9562C11.9854 56.4844 11.1984 57.2714 11.1984 58.2422C11.1984 59.213 11.9854 60 12.9562 60H41.0812C42.052 60 42.839 59.213 42.839 58.2422C42.839 57.2714 42.052 56.4844 41.0812 56.4844H39.3234V47.6953C39.3234 44.7875 36.9577 42.4219 34.05 42.4219H33.7952L32.4991 34.177C36.6941 32.623 40.0558 29.3386 41.7139 25.1948C44.4344 24.1066 48.0005 23.0217 50.8518 18.8102C52.5097 16.3615 53.386 13.504 53.386 10.5469C53.3859 6.66984 50.2317 3.51562 46.3547 3.51562ZM11.1853 20.968C6.89926 19.2536 4.12988 15.1631 4.12988 10.5469C4.12988 8.60836 5.70699 7.03125 7.64551 7.03125C9.58402 7.03125 11.1611 8.60836 11.1611 10.5469C11.1611 10.6705 11.1741 10.791 11.1984 10.9073V19.3359C11.1984 19.9009 11.2288 20.4588 11.2869 21.0087L11.1853 20.968ZM35.8078 56.4844H18.2296V52.9688H35.8078V56.4844ZM34.05 45.9375C35.0192 45.9375 35.8078 46.7261 35.8078 47.6953V49.4531H18.2296V47.6953C18.2296 46.7261 19.0182 45.9375 19.9875 45.9375C20.9411 45.9375 31.8134 45.9375 34.05 45.9375ZM23.801 42.4219L24.9642 35.023C25.6368 35.1107 26.3225 35.1562 27.0187 35.1562C27.7149 35.1562 28.4006 35.1105 29.0732 35.023L30.2364 42.4219H23.801ZM39.3234 19.3359C39.3234 26.1207 33.8035 31.6406 27.0187 31.6406C20.2339 31.6406 14.714 26.1207 14.714 19.3359V10.5469H39.3234V19.3359ZM39.3234 7.03125H14.714V3.51562H39.3234V7.03125ZM42.8148 20.968L42.7523 20.993C42.8093 20.4483 42.8389 19.8955 42.8389 19.3359V10.5469C42.839 8.60836 44.4161 7.03125 46.3547 7.03125C48.2932 7.03125 49.8703 8.60836 49.8703 10.5469C49.8703 15.1631 47.1009 19.2537 42.8148 20.968Z" fill="#242424"/>
+                </svg>
+                <span>Kualitas Top</span>
+                <p>Dibuat dari kayu berkualitas</p>
+            </div>
+
+              <!--service-box---->
+            <div class="service-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <g clip-path="url(#clip0_1431_3809)">
+                <path d="M56.786 21.2612C55.9943 18.8096 56.3318 15.1296 54.274 12.2881C52.2 9.42431 48.5929 8.61033 46.556 7.12064C44.5406 5.64666 42.6656 2.43912 39.2755 1.33287C35.981 0.257791 32.6121 1.71666 30 1.71666C27.3882 1.71666 24.0196 0.257439 20.7245 1.33275C17.335 2.43877 15.4584 5.64701 13.4443 7.12029C11.4097 8.60822 7.79988 9.42443 5.72625 12.2878C3.6702 15.1269 4.0043 18.8154 3.21398 21.2611C2.46187 23.5888 0 26.3824 0 30.0002C0 33.6203 2.45906 36.4031 3.21398 38.7392C4.0057 41.1908 3.6682 44.8708 5.72602 47.7123C7.79988 50.5762 11.4069 51.3901 13.444 52.8799C15.459 54.3536 17.3344 57.5614 20.7245 58.6676C24.0168 59.7419 27.3909 58.2838 30 58.2838C32.6054 58.2838 35.9875 59.7404 39.2755 58.6677C42.6652 57.5617 44.5405 54.3541 46.5557 52.8801C48.5903 51.3922 52.2001 50.576 54.2738 47.7126C56.3299 44.8734 55.9956 41.1853 56.786 38.7394C57.5381 36.4115 60 33.6179 60 30.0002C60 26.3804 57.5415 23.5984 56.786 21.2612ZM52.3257 37.2979C51.4029 40.1544 51.6446 43.3512 50.4775 44.9629C49.2946 46.5962 46.1869 47.3422 43.7889 49.0963C41.4171 50.8308 39.7548 53.5803 37.8214 54.2111C35.9924 54.8081 33.0116 53.596 30.0001 53.596C26.9666 53.596 24.0165 54.8107 22.1787 54.2111C20.2455 53.5803 18.5856 50.8326 16.2113 49.0962C13.8274 47.3528 10.702 46.5914 9.52254 44.9627C8.3591 43.3563 8.59172 40.1374 7.67449 37.2981C6.77543 34.5162 4.6875 32.1074 4.6875 30.0002C4.6875 27.891 6.77355 25.4905 7.67426 22.7025C8.59711 19.8461 8.35535 16.6492 9.52254 15.0375C10.7047 13.4053 13.8148 12.6568 16.2113 10.9042C18.5905 9.16404 20.2424 6.42103 22.1784 5.78928C24.006 5.19303 26.9965 6.40439 29.9999 6.40439C33.0389 6.40439 35.9816 5.18892 37.8213 5.78928C39.7542 6.41998 41.4156 9.16873 43.7889 10.9043C46.1723 12.6477 49.298 13.409 50.4775 15.0376C51.6411 16.6444 51.4072 19.86 52.3255 22.7022V22.7024C53.2246 25.4843 55.3125 27.8931 55.3125 30.0002C55.3125 32.1095 53.2264 34.5099 52.3257 37.2979ZM40.798 22.4774C41.7134 23.3927 41.7134 24.8767 40.798 25.7919L29.0668 37.5231C28.1515 38.4384 26.6674 38.4383 25.7522 37.5231L19.2021 30.973C18.2868 30.0576 18.2866 28.5737 19.202 27.6585C20.1173 26.7432 21.6015 26.7431 22.5165 27.6585L27.4095 32.5513L37.4832 22.4775C38.3986 21.5621 39.8827 21.5621 40.798 22.4774Z" fill="#242424"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1431_3809">
+                <rect width="60" height="60" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                <span>Bergaransi</span>
+                <p>Seumur hidup</p>
+            </div>
+
+              <!--service-box---->
+            <div class="service-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <path d="M55.3479 31.102V3.7797C55.3479 2.80495 54.5577 2.01471 53.5829 2.01471H6.29511C5.32036 2.01471 4.53012 2.80495 4.53012 3.7797V33.2801C3.67869 33.4041 2.84632 33.7346 2.10997 34.2813C-0.211348 35.9273 -0.760378 39.611 1.18405 41.8828L9.13392 51.5204C14.0549 57.2798 19.2825 57.9855 27.0539 57.9855C33.7228 57.9855 36.7043 58.0149 42.5165 56.6906L48.176 55.3369C49.0936 56.6184 50.5505 57.4486 52.1883 57.4486H54.9762C57.7463 57.4486 60 55.0744 60 52.1562V36.3785C60.0001 33.592 57.9449 31.3032 55.3479 31.102ZM47.4147 34.7327L45.063 33.5382C41.1964 31.5865 36.7259 31.5143 32.7982 33.3403C31.7266 33.7618 29.3894 35.1759 28.1771 35.1286H20.0167C17.3099 35.1286 15.1077 37.3307 15.1077 40.0376V41.3248C15.0925 41.3088 15.0766 41.2936 15.0617 41.2774L9.23429 34.952C8.88164 34.5692 8.48546 34.249 8.06022 33.992V16.481H22.5041V22.951C22.5041 23.9258 23.2943 24.716 24.2691 24.716H35.4063C36.381 24.716 37.1712 23.9258 37.1712 22.951V16.481H51.8181V31.1019C49.7559 31.2612 48.0363 32.7365 47.4147 34.7327ZM26.0339 16.481H33.6412V21.186H26.0339V16.481ZM51.818 12.9511H37.1712V5.54469H51.8181V12.9511H51.818ZM33.6413 5.54469V12.9512H26.034V5.54469H33.6413ZM22.504 5.54469V12.9512H8.0601V5.54469H22.504ZM41.6973 53.2568C36.3282 54.4866 33.0946 54.4368 27.1172 54.4368C19.8219 54.4368 16.297 54.3189 11.8572 49.2741L3.90731 39.6364C2.5245 37.8358 5.02914 35.7101 6.63811 37.3436L12.4655 43.6691C14.0056 45.2941 15.9437 46.1885 18.3325 46.2411H34.4889C35.4637 46.2411 36.2539 45.4509 36.2539 44.4761C36.2539 43.5014 35.4637 42.7111 34.4889 42.7111H18.6376V40.0374C18.6376 39.2771 19.2561 38.6584 20.0166 38.6584H28.177C30.0154 38.79 32.6689 37.255 34.2863 36.5411C37.228 35.1733 40.5763 35.2275 43.4684 36.6872L47.1647 38.5647V51.949L41.6973 53.2568ZM56.4701 52.1561C56.4701 53.1279 55.8 53.9185 54.9763 53.9185H52.1884C51.3647 53.9185 50.6947 53.1279 50.6947 52.1561V36.3785C50.6947 35.4067 51.3648 34.616 52.1884 34.616H54.9763C55.8 34.616 56.4701 35.4065 56.4701 36.3785V52.1561Z" fill="#242424"/>
+                </svg>
+                <span>Gratis Ongkir</span>
+                <p>Pengiriman seluruh Indonesia</p>
+            </div>
+        </section>
+        
+    <footer class="footer">
+    <div class="footer-container">
+        <!-- Profil Perusahaan -->
+        <div class="profil-perusahaan">
+            <a href="#" class="footer-logo">
+                <img src="images/IKIYO LOGO.png" alt="logo">
+            </a>
+            <p>
+                Jl. Mayjen HR. Muhamad No. 27-29, Putat Gede, Kec. Sukomanunggal, Kota Surabaya, Jawa Timur 60189, Indonesia
+            </p>
+              <div class="footer-social">
+            <a href="#" title="Instagram">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+
+            <a href="#" title="Facebook">
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+
+            <a href="#" title="WhatsApp">
+              <i class="fab fa-whatsapp fa-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigasi & Bantuan -->
+        <div class="footer-link-box">
+            <div>
+                <strong>Navigasi</strong>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="pemweb.catalogue.html">Katalog</a></li>
+                    <li><a href="Kotak-saran.html">Kotak Saran</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <strong>Bantuan</strong>
+                <ul>
+                    <li><a href="#">Pembayaran</a></li>
+                    <li><a href="#">Pengembalian</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="footer-subscribe">
+            <strong>Subscribe</strong>
+            <p>Subscribe email anda untuk dapatkan promo menarik</p>
+            <div class="subscribe-box">
+                <input type="email" placeholder="example@email.com" required />
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script scr="wishlist.js"></script>
+        <script src="cart.js"></script>
+        <script src="search.js"></script>
+        <script src="add-to-cart.js"></script>
+    </body>
+</html>
